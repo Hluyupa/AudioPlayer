@@ -146,6 +146,8 @@
                             Height="20"
                             Width="20"/>
                     </Button>
+                    
+                    <!--Ползунок переключения громкости-->
                     <Slider 
                         Margin="5"
                         Grid.Column="1"

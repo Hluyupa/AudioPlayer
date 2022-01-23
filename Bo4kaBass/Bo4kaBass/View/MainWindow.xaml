@@ -14,7 +14,7 @@
             <RowDefinition Height="0.3*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        
+        <!--asdasdasd-->
         <!--Меню-->
         <Menu 
             Background="Transparent"
@@ -146,6 +146,8 @@
                             Height="20"
                             Width="20"/>
                     </Button>
+                    
+                    <!--Ползунок переключения громкости-->
                     <Slider 
                         Margin="5"
                         Grid.Column="1"
@@ -158,13 +160,14 @@
             </Grid>
         </Grid>
         
-        <!--Список аудиофайлов-->
+        <!--Меню выбора плейлистов и mp3-файлов для проигрывания-->
         <TabControl
             Grid.Row="2"
             Background="Transparent"
             BorderThickness="0" 
             HorizontalAlignment="Stretch">
 
+            <!--Список mp3-файлов из папки-->
             <TabItem
                 Header="Очередь">
 
@@ -179,7 +182,6 @@
                     <ListView
                         HorizontalContentAlignment="Stretch"
                         VerticalContentAlignment="Stretch"
-                        
                         ItemsSource="{Binding MetaDataMP3List}"
                         SelectedItem="{Binding SelectedMusic}"
                         Background="Transparent"

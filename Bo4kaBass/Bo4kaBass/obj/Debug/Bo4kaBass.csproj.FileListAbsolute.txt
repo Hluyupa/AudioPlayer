@@ -75,3 +75,24 @@ C:\Users\User\Desktop\На всякий случай\AudioPlayer\Bo4kaBass\Bo4ka
 C:\Users\User\Desktop\На всякий случай\AudioPlayer\Bo4kaBass\Bo4kaBass\obj\Debug\Bo4kaBass.csproj.CopyComplete
 C:\Users\User\Desktop\На всякий случай\AudioPlayer\Bo4kaBass\Bo4kaBass\obj\Debug\Bo4kaBass.exe
 C:\Users\User\Desktop\На всякий случай\AudioPlayer\Bo4kaBass\Bo4kaBass\obj\Debug\Bo4kaBass.pdb
+C:\Users\User\Desktop\Командный проект\AudioPlayer\Bo4kaBass\Bo4kaBass\bin\Debug\Bo4kaBass.exe.config
+C:\Users\User\Desktop\Командный проект\AudioPlayer\Bo4kaBass\Bo4kaBass\bin\Debug\Bo4kaBass.exe
+C:\Users\User\Desktop\Командный проект\AudioPlayer\Bo4kaBass\Bo4kaBass\bin\Debug\Bo4kaBass.pdb
+C:\Users\User\Desktop\Командный проект\AudioPlayer\Bo4kaBass\Bo4kaBass\bin\Debug\taglib-sharp.dll
+C:\Users\User\Desktop\Командный проект\AudioPlayer\Bo4kaBass\Bo4kaBass\obj\Debug\Bo4kaBass.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Командный проект\AudioPlayer\Bo4kaBass\Bo4kaBass\obj\Debug\Styles\MainStyle.baml
+C:\Users\User\Desktop\Командный проект\AudioPlayer\Bo4kaBass\Bo4kaBass\obj\Debug\View\MainWindow.g.cs
+C:\Users\User\Desktop\Командный проект\AudioPlayer\Bo4kaBass\Bo4kaBass\obj\Debug\View\UserPlayListsWindow.g.cs
+C:\Users\User\Desktop\Командный проект\AudioPlayer\Bo4kaBass\Bo4kaBass\obj\Debug\App.g.cs
+C:\Users\User\Desktop\Командный проект\AudioPlayer\Bo4kaBass\Bo4kaBass\obj\Debug\Bo4kaBass_MarkupCompile.cache
+C:\Users\User\Desktop\Командный проект\AudioPlayer\Bo4kaBass\Bo4kaBass\obj\Debug\Bo4kaBass_MarkupCompile.lref
+C:\Users\User\Desktop\Командный проект\AudioPlayer\Bo4kaBass\Bo4kaBass\obj\Debug\App.baml
+C:\Users\User\Desktop\Командный проект\AudioPlayer\Bo4kaBass\Bo4kaBass\obj\Debug\View\MainWindow.baml
+C:\Users\User\Desktop\Командный проект\AudioPlayer\Bo4kaBass\Bo4kaBass\obj\Debug\View\UserPlayListsWindow.baml
+C:\Users\User\Desktop\Командный проект\AudioPlayer\Bo4kaBass\Bo4kaBass\obj\Debug\Bo4kaBass.g.resources
+C:\Users\User\Desktop\Командный проект\AudioPlayer\Bo4kaBass\Bo4kaBass\obj\Debug\Bo4kaBass.Properties.Resources.resources
+C:\Users\User\Desktop\Командный проект\AudioPlayer\Bo4kaBass\Bo4kaBass\obj\Debug\Bo4kaBass.csproj.GenerateResource.cache
+C:\Users\User\Desktop\Командный проект\AudioPlayer\Bo4kaBass\Bo4kaBass\obj\Debug\Bo4kaBass.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Командный проект\AudioPlayer\Bo4kaBass\Bo4kaBass\obj\Debug\Bo4kaBass.csproj.CopyComplete
+C:\Users\User\Desktop\Командный проект\AudioPlayer\Bo4kaBass\Bo4kaBass\obj\Debug\Bo4kaBass.exe
+C:\Users\User\Desktop\Командный проект\AudioPlayer\Bo4kaBass\Bo4kaBass\obj\Debug\Bo4kaBass.pdb

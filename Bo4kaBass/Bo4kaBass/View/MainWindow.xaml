@@ -158,7 +158,7 @@
             </Grid>
         </Grid>
         
-        <!--Список аудиофайлов-->
+        <!--Меню выбора плейлистов и mp3-файлов для проигрывания-->
         <TabControl
             Grid.Row="2"
             Background="Transparent"

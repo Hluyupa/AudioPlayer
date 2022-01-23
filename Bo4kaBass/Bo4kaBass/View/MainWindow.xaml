@@ -167,6 +167,7 @@
             BorderThickness="0" 
             HorizontalAlignment="Stretch">
 
+            <!--Список mp3-файлов из папки-->
             <TabItem
                 Header="Очередь">
 
@@ -181,7 +182,6 @@
                     <ListView
                         HorizontalContentAlignment="Stretch"
                         VerticalContentAlignment="Stretch"
-                        
                         ItemsSource="{Binding MetaDataMP3List}"
                         SelectedItem="{Binding SelectedMusic}"
                         Background="Transparent"

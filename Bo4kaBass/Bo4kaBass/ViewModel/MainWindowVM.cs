@@ -20,6 +20,8 @@ namespace Bo4kaBass.ViewModel
 {
     public class MainWindowVM : INotifyPropertyChanged
     {
+        //gfhgfhgfghfhgfhgf
+        //gfgfdgfxfxfdz
         //Переменная для статуса Играть/Пауза
         private bool PlayPauseStatus;
 

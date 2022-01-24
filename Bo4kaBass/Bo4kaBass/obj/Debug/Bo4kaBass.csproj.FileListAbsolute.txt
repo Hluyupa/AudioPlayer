@@ -96,3 +96,4 @@ C:\Users\User\Desktop\Командный проект\AudioPlayer\Bo4kaBass\Bo4k
 C:\Users\User\Desktop\Командный проект\AudioPlayer\Bo4kaBass\Bo4kaBass\obj\Debug\Bo4kaBass.csproj.CopyComplete
 C:\Users\User\Desktop\Командный проект\AudioPlayer\Bo4kaBass\Bo4kaBass\obj\Debug\Bo4kaBass.exe
 C:\Users\User\Desktop\Командный проект\AudioPlayer\Bo4kaBass\Bo4kaBass\obj\Debug\Bo4kaBass.pdb
+C:\Users\User\Desktop\TeamProject\AudioPlayer\Bo4kaBass\Bo4kaBass\obj\Debug\Bo4kaBass.csproj.AssemblyReference.cache

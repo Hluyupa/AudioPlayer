@@ -58,7 +58,12 @@
             Property="BorderBrush"
             Value="Transparent" />
     </Style>
+    
+    <!--Стиль для изображений-->
+    <Style TargetType="Image">
+        <Setter Property="RenderOptions.BitmapScalingMode" Value="HighQuality"/>
+    </Style>
 
 
-   
+
 </ResourceDictionary>

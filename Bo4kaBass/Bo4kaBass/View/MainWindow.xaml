@@ -14,9 +14,6 @@
             <RowDefinition Height="0.3*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <!--cvbcvbcvbcb-->
-        <!--cvbcvbcvbcb-->
-        <!--cvbcvbcvbcb-->
         <!--Меню-->
         <Menu 
             Background="Transparent"
@@ -96,8 +93,7 @@
                         Style="{StaticResource ControlMusicButtonStyle}"
                         Margin="5"
                         Command="{Binding PreviousMusic}">
-                        <Image 
-                             RenderOptions.BitmapScalingMode="HighQuality"
+                        <Image
                             Source="/Resources/BackTrack.png"
                             Height="20"
                             Width="20"/>
@@ -109,7 +105,7 @@
                         Margin="5"
                         Command="{Binding PlayPauseCommand}">
                         <Image 
-                             RenderOptions.BitmapScalingMode="HighQuality"
+                            
                             Source="{Binding PlayPauseImageSource}"
                             Height="20"
                             Width="20"/>
@@ -121,7 +117,7 @@
                         Margin="5"
                         Command="{Binding NextMusic}">
                         <Image 
-                             RenderOptions.BitmapScalingMode="HighQuality"
+                           
                             Source="/Resources/NextTrack.png"
                             Height="20"
                             Width="20"/>
@@ -143,7 +139,6 @@
                         Style="{StaticResource ControlMusicButtonStyle}"
                         Margin="5">
                         <Image 
-                            RenderOptions.BitmapScalingMode="HighQuality"
                             Source="/Resources/SoundVolume.png"
                             Height="20"
                             Width="20"/>
@@ -176,6 +171,7 @@
                 <!--Список аудиофайлов-->
                 <Grid HorizontalAlignment="Stretch" >
                     <TextBlock
+                        
                         Visibility="{Binding NoFilesToPlayed}"
                         HorizontalAlignment="Center"
                         VerticalAlignment="Center"
@@ -192,12 +188,11 @@
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <Border>
-                                    <Grid
-                                        Height="50">
+                                    <Grid Height="50">
                                         <Grid.ColumnDefinitions>
-                                            <ColumnDefinition
-                                                Width="0.2*" />
+                                            <ColumnDefinition Width="50" />
                                             <ColumnDefinition />
+                                            <ColumnDefinition Width="50"/>
                                         </Grid.ColumnDefinitions>
                                         <!--Обложка-->
                                         <Image
@@ -226,15 +221,64 @@
                                                 Margin="5"
                                                 Text="{Binding Path=Artist}" />
                                         </Grid>
+                                        <Button
+                                            Style="{StaticResource ControlMusicButtonStyle}"
+                                            Grid.Column="2"
+                                            Content="+"
+                                            Width="50"
+                                            Height="50"/>
                                     </Grid>
                                 </Border>
                             </DataTemplate>
                         </ListView.ItemTemplate>
+                        
                     </ListView>
                 </Grid>
             </TabItem>
             <TabItem
-                Header="Плейлисты"></TabItem>
+                Header="Плейлисты">
+                <ListView
+                    BorderThickness="0"
+                    VerticalContentAlignment="Stretch"
+                    HorizontalContentAlignment="Stretch"
+                    Background="Transparent">
+                    <ListView.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <WrapPanel Orientation="Horizontal" HorizontalAlignment="Left"/>
+                        </ItemsPanelTemplate>
+                    </ListView.ItemsPanel>
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <Border>
+                                <Grid
+                                    Height="125"
+                                    Width="100">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="100"/>
+                                        <RowDefinition Height="25"/>
+                                    </Grid.RowDefinitions>
+                                    
+                                    <!--Обложка плейлиста-->
+                                    <Image
+                                        Grid.Row="0"
+                                        Margin="5"
+                                        Source="/Resources/Лого.png"/>
+
+                                    <!--Название плейлиста-->
+                                    <TextBlock
+                                        TextWrapping="Wrap"
+                                        Margin="5"
+                                        Grid.Row="1"
+                                        HorizontalAlignment="Left"
+                                        VerticalAlignment="Center"
+                                        Text="Текст"/>
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                    <Button/>
+                </ListView>
+            </TabItem>
         </TabControl>
     </Grid>
 </Window>

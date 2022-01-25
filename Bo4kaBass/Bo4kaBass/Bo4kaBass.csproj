@@ -136,8 +136,5 @@
   <ItemGroup>
     <Resource Include="Resources\SoundVolume.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Playvect.png" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -65,8 +65,12 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Model\MetaDataMP3File.cs" />
+    <Compile Include="ViewModel\CreatePlayListWindowVM.cs" />
     <Compile Include="ViewModel\MainWindowVM.cs" />
     <Compile Include="ViewModel\RelayCommand.cs" />
+    <Compile Include="View\CreatePlayListWindow.xaml.cs">
+      <DependentUpon>CreatePlayListWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
@@ -103,6 +107,10 @@
   </ItemGroup>
   <ItemGroup>
     <Page Include="Styles\MainStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\CreatePlayListWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

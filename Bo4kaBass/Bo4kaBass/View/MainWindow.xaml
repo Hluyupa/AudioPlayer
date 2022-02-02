@@ -25,6 +25,10 @@
                     Background="{StaticResource Black}"
                     Command="{Binding SelectDirectory}"
                     Header="Выбор папки"/>
+                <MenuItem
+                    Background="{StaticResource Black}"
+                    Command="{Binding CreatePlayList}"
+                    Header="Создать плейлист"/>
             </MenuItem>
         </Menu>
 

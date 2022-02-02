@@ -15,6 +15,7 @@ using System.Threading;
 using TagLib;
 using System.Windows.Media.Imaging;
 using System.Windows.Controls;
+using Bo4kaBass.View;
 
 namespace Bo4kaBass.ViewModel
 {
@@ -25,6 +26,9 @@ namespace Bo4kaBass.ViewModel
 
         //Класс, позволяющий работать с аудиофайлами
         private MediaPlayer MediaPlayer;
+
+        //Команда для создания плейлиста
+        public RelayCommand CreatePlayList { get; set; }
 
         //Команда для выбора папки
         public RelayCommand SelectDirectory { get; set; }
@@ -37,6 +41,22 @@ namespace Bo4kaBass.ViewModel
 
         //Команда для переключения на следующий трек
         public RelayCommand NextMusic { get; set; }
+
+        //Название плейлиста, которое вводит пользователь
+        private string playListName;
+        public string PlayListName
+        {
+            get 
+            {
+                return playListName; 
+            }
+            set 
+            { 
+                playListName = value;
+                OnPropertyChanged();
+            }
+        }
+
 
         //Установка свойства отображения для textBox при отстуствии mp3-файлов
         private string noFilesToPlayed;
@@ -303,8 +323,6 @@ namespace Bo4kaBass.ViewModel
 
                     else
                     {
-
-
                         BitmapImage bitmap = new BitmapImage(new Uri("pack://application:,,,/Resources/Лого.png"));
                         byte[] data;
                         PngBitmapEncoder encoder = new PngBitmapEncoder();
@@ -340,6 +358,7 @@ namespace Bo4kaBass.ViewModel
 
         public MainWindowVM()
         {
+            CreatePlayList = new RelayCommand(createPlayList);
             PlayPauseCommand = new RelayCommand(playPauseCommand);
             SelectDirectory = new RelayCommand(selectDirectory);
             PreviousMusic = new RelayCommand(previousMusic);
@@ -365,6 +384,23 @@ namespace Bo4kaBass.ViewModel
                 MessageBox.Show("Выберите папку с файлами для вопроизведения.", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             
+        }
+
+        private void createPlayList(object obj)
+        {
+
+            CreatePlayListWindow createPlayListWindow = new CreatePlayListWindow();
+            createPlayListWindow.ShowDialog();
+
+            /*DirectoryInfo directoryInfo = new DirectoryInfo(@"C:\PlayLists");
+            if (directoryInfo.Exists == false)
+            {
+                directoryInfo.Create();
+                
+            }*/
+
+
+
         }
 
         private void nextMusic(object obj)

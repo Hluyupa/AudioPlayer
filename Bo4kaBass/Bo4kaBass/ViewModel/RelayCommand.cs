@@ -19,6 +19,11 @@ namespace Bo4kaBass.ViewModel
             this.execute = execute;
             this.canExecute = canExecute;
         }
+
+        public RelayCommand()
+        {
+        }
+
         public bool CanExecute(object parameter)
         {
             return this.canExecute == null || this.canExecute(parameter);

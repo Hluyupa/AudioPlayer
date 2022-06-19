@@ -145,22 +145,27 @@ namespace Bo4kaBass.ViewModel
             }
             set
             {
+
                 if (value != 0)
                 {
-                    //Проверка на перемотку вперёд
+                    //Проверка на перемотку назад
                     if (value < sliderPositionMusic)
                     {
-                        MediaPlayer.Position = TimeSpan.FromSeconds(sliderPositionMusic);
+                        
+                        MediaPlayer.Position = TimeSpan.FromMilliseconds(sliderPositionMusic * 1000);
+                        
                     }
                     else
                     {
                         sliderPositionMusic = value;
                     }
 
-                    //Проверка на перемотку назад
+                    //Проверка на перемотку вперёд
                     if (value > sliderPositionMusic + 1)
                     {
-                        MediaPlayer.Position = TimeSpan.FromSeconds(sliderPositionMusic);
+
+                        MediaPlayer.Position = TimeSpan.FromMilliseconds(sliderPositionMusic * 1000);
+                       
                     }
                     else
                     {
@@ -171,6 +176,9 @@ namespace Bo4kaBass.ViewModel
                 {
                     sliderPositionMusic = value;
                 }
+
+               
+                
                 OnPropertyChanged();
             }
         }
@@ -206,7 +214,7 @@ namespace Bo4kaBass.ViewModel
                 MediaPlayer.Open(new Uri(selectedMusic.Path));
                 PlayPauseImageSource = "/Resources/Pause.png";
                 DispatcherTimer timer = new DispatcherTimer();
-                timer.Interval = TimeSpan.FromSeconds(1);
+                timer.Interval = TimeSpan.FromMilliseconds(1);
                 timer.Tick += Timer_Tick;
                 timer.Start();
 
@@ -241,7 +249,7 @@ namespace Bo4kaBass.ViewModel
             }
 
             TimeMusicPosition = MediaPlayer.Position.ToString(@"mm\:ss");
-            SliderPositionMusic = Convert.ToInt32(MediaPlayer.Position.TotalSeconds);
+            SliderPositionMusic = Convert.ToInt32(MediaPlayer.Position.TotalMilliseconds / 1000);
             
 
         }
@@ -291,12 +299,7 @@ namespace Bo4kaBass.ViewModel
                 //Получение метаданных из каждого mp3-файла
                 foreach (var item in FileList)
                 {
-                    
-
                     var audioFile = TagLib.File.Create(item.FullName);
-
-                   
-
                     MetaDataMP3List.Add(new MetaDataMP3File
                     {
                         
@@ -388,19 +391,8 @@ namespace Bo4kaBass.ViewModel
 
         private void createPlayList(object obj)
         {
-
             CreatePlayListWindow createPlayListWindow = new CreatePlayListWindow();
             createPlayListWindow.ShowDialog();
-
-            /*DirectoryInfo directoryInfo = new DirectoryInfo(@"C:\PlayLists");
-            if (directoryInfo.Exists == false)
-            {
-                directoryInfo.Create();
-                
-            }*/
-
-
-
         }
 
         private void nextMusic(object obj)
